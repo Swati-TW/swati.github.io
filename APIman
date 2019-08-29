@@ -7,7 +7,7 @@ The API Manager is a set of REST endpoints and a **User Interface**, and is used
 The API Gateway applies the configured governance policies at runtime to every API request from every registered client.
 ## API Manager Concepts
 The API Manager is used to configure APIs and connect them to consumers. It is where providers go to configure the APIs they would like to manage, and it’s also where API consumers go to find APIs to consume.
-### Organization
+### Organization 
 An **Organization** is simply an entity within which everything else is contained. A user must be a member of an Organization in order to manage any of the entities contained within it. Membership in an Organization is role based, so different users may be granted different capabilities within it.
 ### Service
 When an API provider wishes to manage one of their APIs, they do so by creating a **Service within** the Organization. The Service is given a name and description, along with details about the API’s implementation endpoint. The Service can also be given a set of Policies, which will be applied by the API Gateway whenever the Service is invoked. More about Policies a little bit later.
